@@ -1,0 +1,16 @@
+{
+  "name": "golane-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Lane product site at golane.ai",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs public",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist",
+    "check": "node scripts/check.mjs"
+  }
+}

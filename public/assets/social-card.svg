@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f8f2"/>
+  <circle cx="1020" cy="335" r="300" fill="#eff3e8" stroke="#dce1d7"/>
+  <circle cx="1020" cy="335" r="245" fill="none" stroke="#d2dcc5"/>
+  <g transform="translate(68 54) scale(.056)" fill="#142520">
+    <path d="M101 0h57q21 0 17 21l-70 331C80 466 114 584 249 584h450v70H224C64 654-25 531 6 378L82 17Q85 0 101 0Z"/>
+    <path d="M225 0h57q21 0 17 21l-67 317c-18 78-3 156 92 156h375v62H311c-130 0-194-73-175-178l71-361q3-17 18-17Z"/>
+    <path d="M348 0h59q21 0 17 21l-61 322c-9 30 7 50 32 50h304v75H350c-75 0-109-57-85-147l65-304q3-17 18-17Z"/>
+  </g>
+  <text x="123" y="86" font-family="Arial,sans-serif" font-size="35" font-weight="700" letter-spacing="-1.5" fill="#142520">Lane</text>
+  <text x="68" y="242" font-family="Arial,sans-serif" font-size="99" letter-spacing="-5" fill="#142520">Your work.</text>
+  <text x="68" y="350" font-family="Arial,sans-serif" font-size="99" letter-spacing="-5" fill="#46775a">Your rules.</text>
+  <text x="71" y="420" font-family="Arial,sans-serif" font-size="25" fill="#627068">Open-source project tracking. On your infrastructure.</text>
+  <path d="M68 504h1064" stroke="#dce1d7"/>
+  <text x="71" y="554" font-family="Arial,sans-serif" font-size="18" fill="#142520">Self-hosted. Air-gap ready. No license server. Ever.</text>
+  <text x="1014" y="554" font-family="Arial,sans-serif" font-size="18" fill="#627068">golane.ai</text>
+  <g transform="translate(834 195) scale(.35)" fill="#142520">
+    <path d="M101 0h57q21 0 17 21l-70 331C80 466 114 584 249 584h450v70H224C64 654-25 531 6 378L82 17Q85 0 101 0Z"/>
+    <path d="M225 0h57q21 0 17 21l-67 317c-18 78-3 156 92 156h375v62H311c-130 0-194-73-175-178l71-361q3-17 18-17Z"/>
+    <path d="M348 0h59q21 0 17 21l-61 322c-9 30 7 50 32 50h304v75H350c-75 0-109-57-85-147l65-304q3-17 18-17Z"/>
+  </g>
+</svg>
