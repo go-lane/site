@@ -10,7 +10,7 @@ Node 20 or newer is sufficient. There is nothing to install.
 ```sh
 npm run dev       # http://127.0.0.1:4173
 npm run check     # assets, internal links, domain, contact
-npm run build     # copy public/ to dist/
+npm run build     # build public/ into dist/
 npm run preview   # serve the production output locally
 ```
 
@@ -20,14 +20,33 @@ server. Run `npm run check` and review desktop and mobile layouts before pushing
 
 ## Hosting
 
-Serve the contents of `dist/` from any static host. Use `npm run build` as the
-build command and `dist` as the output directory. The source also works directly
-from `public/` when the host does not need a build step.
+`.github/workflows/pages.yml` publishes every push to `main` through GitHub
+Actions. It checks the site, builds `dist/`, uploads only that output, and deploys
+it to the `github-pages` environment. It can also be run manually from the
+Actions tab. Deployments run in order without canceling a running publication.
 
-The canonical URL, sitemap, share metadata, and `CNAME` use `golane.ai`. The CNAME
-file is compatible with GitHub Pages but does not configure a host, DNS, or TLS.
-There is deliberately no automatic production deployment workflow. Configure
-the chosen hosting provider and domain separately.
+Enable GitHub Pages in repository **Settings → Pages → Source → GitHub Actions**.
+The expected default URL is <https://go-lane.github.io/site/>. GitHub Free requires
+this repository to be public for Pages; keeping the repository private requires
+a supporting paid plan. The workflow uses GitHub-hosted Ubuntu runners and the
+built-in `GITHUB_TOKEN`; no deploy key or repository secret is needed.
+
+Assets use relative paths so the same site works under `/site/` and at a custom
+domain root. The workflow reads the actual site URL from GitHub Pages and passes
+it to the build as `SITE_URL`. The build sets canonical, Open Graph, sitemap,
+and robots URLs to match that address. To reproduce the Pages build locally:
+
+```sh
+SITE_URL=https://go-lane.github.io/site/ npm run build
+npm run preview
+```
+
+The custom domain is left unset. When ready, configure `golane.ai` and its DNS
+in Pages settings, then run the workflow again; it will use the new address.
+The Actions publishing flow does not need a tracked `CNAME` file. Standalone
+builds default to `https://golane.ai/` unless `SITE_URL` is provided.
+
+Other static hosts can serve `dist/` using `npm run build` as the build command.
 
 ## Content and assets
 

@@ -42,6 +42,7 @@ owner-specified product direction, not a claim that this website task performed
 an offline product installation. Migration is offered as planning and assistance;
 no completed automatic Jira importer or guaranteed full-fidelity import is claimed.
 
-The site is prepared for the owner's domain, but pushing the source does not
-configure hosting, DNS, TLS, repository visibility, product releases, or an email
-inbox. None of those changes are performed by this repository.
+The initial site creation prepared the owner's domain without configuring
+hosting, DNS, TLS, repository visibility, product releases, or an email inbox.
+The subsequent GitHub Pages publishing workflow is described in the README;
+custom-domain setup remains an owner task.
